@@ -1,0 +1,809 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.firstpart{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('https://images.unsplash.com/photo-1530099486328-e021101a494a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2147&q=80');
+    background-position: center;
+    background-size: cover;
+    position:relative ;
+    
+}
+nav{
+    display: flex;
+    padding-top: 1%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1919;
+    padding-left: 7%;
+    padding-right: 7%;
+    
+}
+.logolink{
+    color: white;
+    text-decoration: none;
+    
+}
+.logolink span{
+    background-color: #5d8d92;
+    padding: 2% 23%;
+    border-radius: 50%;
+}
+.logolink:hover{
+    color: white;
+}
+.logolink p{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5%;
+}
+
+nav img{
+    width: 150px;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #5d8d92;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+nav .fas{
+    display: none;
+}
+
+
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+
+    }
+    .nav-links{
+        position: fixed;
+        background: #5d8d92;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fas{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding:30px ;
+    }
+}
+
+
+
+
+
+
+.mybtn{
+    background: #5d8d92;
+    border-color: #5d8d92;
+}
+.mybtn:hover{
+    background: #00a18900;
+    border-color: #5d8d92;
+    transition: 1s;
+}
+.firstpartcont{
+    margin-top: 5%;
+}
+.colls h1{
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    font-size: 45px;
+    padding-top: 4%;
+    letter-spacing: 2px;
+}
+.colls p{
+    color: white;
+    text-align: right;
+    padding-top: 6%;
+
+}
+.colls span{
+    color: #5d8d92;
+    
+}
+.mybtn1{
+    background: #5d8d92;
+    border: 1px;
+    border-color: #5d8d92;
+    border-radius: 30px;
+    padding: 3% 12%;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+    margin-left: 25%;
+}
+.mybtn1:hover{
+
+    background: #02c0a400;
+    color: white;
+    transition: 1s;
+    border: 1px solid #5d8d92;
+}
+.mybtn2{
+    margin-left: 25%;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    padding: 2% 5%;
+    border-radius: 30px;
+}
+.mybtn2:hover{
+    border: 1px solid #5d8d92;
+    color: white;
+    transition: 1s;
+}
+.playicon{
+    font-size: 50px;
+    color: #5d8d92;
+    margin: 0px 4%;
+}
+
+/*----------------------------------------------2nd part ----------------------*/
+
+
+
+.secpart h1{
+    color: #5d8d92;
+    text-align: center;
+    padding-top: 5%;
+    font-size: 45px;
+}
+.secpart h6{
+    text-align: center;
+    padding: 1% 0% 4% 0%;
+}
+.secpart h2 {
+    text-align: center;
+}
+.secpart p{
+    text-align: justify;
+}
+.progressbar{
+    background-color:  #5d8d92;
+}
+.progress1{
+    font-size: 18px;
+}
+@media(max-width:700px){
+    .secpart h6{
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+
+
+
+/*----------------------------------------------3rd part ----------------------*/
+
+
+.thirdpart{
+    background-color: #F6F6F6;
+    padding-bottom: 5%;
+}
+.thirdpart h1{
+    color: #5d8d92;
+    text-align: center;
+    padding-top: 5%;
+    font-size: 45px;
+}
+.thirdpart h6{
+    text-align: center;
+    padding: 1% 0% 4% 0%;
+}
+
+.thirdpart img{
+    height: 300px;
+    width: 100%;
+    border: 5px solid #586b68; 
+}
+
+.names p{
+    text-align: center;
+    padding-top: 6%;
+}
+.names span{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+
+}
+.icons{
+    border: 2px solid #586b68;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    font-size: 25px;
+    letter-spacing: 7px;
+    height: 55px;
+}
+.icon1{
+    color: black;
+    margin-top: 4%;
+}
+.icon1:hover{
+    color: #5d8d92;
+    transition: 1s;
+}
+.icons:hover{
+    background-color: rgba(255, 255, 255, 0);
+    transition: 1s;
+    border: 2px solid #586b68;
+}
+
+.icon2{
+    font-size: 50px;
+    padding-left: 42%;
+    margin: 5% 0%;
+    color: black;
+}
+.icon2:hover{
+    color: #ffffff;
+    transition: 1s;
+}
+
+.thirdpart h3{
+    text-align: center;
+}
+.thirdpart p{
+    text-align: center;
+}
+.row1{
+    background-color: white;
+}
+.cols1:hover{
+    background-color:#5d8d92;
+    color: white;
+    transition: 1s;
+}
+
+/*----------------------------------------------4th part ----------------------*/
+
+.fourpart h6{
+    color: #5d8d92;
+    font-size: 25px;
+}
+.fourpart span{
+    color: black;
+    font-size: 35px;
+}
+.fourpart p{
+    text-align: justify;
+}
+.mybtn3{
+    background: #5d8d92;
+    border-color: #5d8d92;
+    border: 2px solid #5d8d92;
+    width: 26%;
+    height: 14%;
+}
+.mybtn3:hover{
+    background: #00a18900;
+    border-color: #5d8d92;
+    transition: 1s;
+    color: #000000;
+}
+
+.divicon{
+    box-shadow: 0 0 6px 0px ;
+    border-radius: 3px;
+}
+
+.divicon:hover{
+    background-color:#5d8d92;
+    color: white;
+    transition: 1s;
+    box-shadow: 0 0 6px 0px ;
+    
+}
+.fourpart .divicon p{
+    text-align: center;
+}
+.icon3{
+    font-size: 50px;
+    text-align: center;
+    margin: 4%;
+    padding-left: 39%;
+}
+
+/*----------------------------------------------5th part ----------------------*/
+.fivepart{
+    background-color: #F6F6F6;
+    padding: 4% 0px;
+}
+.fivepart h2{
+    text-align: center;
+    color: #5d8d92;
+    font-size: 50px;
+}
+.fivepart p{
+    text-align: center;
+}
+.fivepart .container ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 23px;
+    position: relative;
+    font-size: 23px;
+    margin: 0px 2px;
+
+}
+.fivepart .container .rowlist{
+    border-bottom: 5px solid #5d8d92;
+    border-radius: 25px;
+}
+.fivepart ul li{
+    border-radius: 30px;
+}
+.fivepart ul li:hover{
+    background-color: #5d8d92;
+    
+    color: white;
+    transition: 1s;
+}
+.fivepart img{
+    width: 100%;
+}
+.colbtn{
+    text-align: center;
+}
+.mybtn4{
+    background-color:  #5d8d92;
+    width: 26%;
+    height: 14%;
+    text-decoration: none;
+    padding: 1% 3%;
+    border: 2px solid #5d8d92;
+    border-radius: 25px;
+    color: white;
+    letter-spacing: 1px;
+}
+.mybtn4:hover{
+    background-color:  #02c0a400;
+    border: 2px solid #5d8d92;
+    color: #000000;
+    transition: 1s;
+}
+
+/*----------------------------------------------6th part ----------------------*/
+
+
+.sixpart{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url('https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80');
+    width: 100%;
+    background-size: cover;
+    position:relative;
+    background-position: center;
+
+}
+.sixpart h6{
+    color: #5d8d92;
+    font-size: 30px;
+}
+.sixpart p{
+    color: white;
+    text-align: left;
+    margin-bottom: 8%;
+}
+.mybtn5{
+    text-decoration: none;
+    background-color: #5d8d92;
+    padding: 2% 6%;
+    border: 1px solid #5d8d92;
+    border-radius: 6px;
+    color: white;
+}
+.mybtn5:hover{
+    background-color: #02c0a400;
+    border: 1px solid #5d8d92;
+    color: #ffffff;
+    transition: 1s;
+}
+
+
+
+/*----------------------------------------------7th part ----------------------*/
+.sevenpart{
+    padding: 4% 0px;
+    background-color: #F6F6F6;
+}
+.sevenpart h2{
+    font-size: 50px;
+    color: #5d8d92;
+    text-align: center;
+}
+.sevenpart p{
+    text-align: center;
+}
+.sev-text{
+    background-color: white;
+    width: 90%;
+    text-align: center;
+    padding: 4% 2%;
+    margin-left: 5%;
+    box-shadow: 0px 0px 9px 2px;
+    border-radius: 5px;
+}
+
+.sev-text p{
+    text-align: justify;
+}
+.light{
+    font-size: 22px;
+    color: #5d8d92;
+    margin: 0px 1%;
+}
+.far1{
+    font-size: 20px;
+    color: #5d8d92;
+    margin-right: 2%;
+    margin-left: 5%;
+}
+.sev-text a{
+    text-decoration: none;
+    color: #000000;
+}
+.bottomtext{
+    margin-bottom: -3%;
+}
+
+/*----------------------------------------------8th part ----------------------*/
+.eightpart{
+
+    background-color:  #333333;
+    margin-bottom: -14%;
+}
+.eightpart h1{
+    color: #5d8d92;
+    text-align: center; 
+    font-size: 50px;
+    padding-top: 2% ;
+}
+.eightpart p{
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 2%;
+    color: white;
+    margin-bottom: 4%;
+}
+.profileimg{
+    width: 18%;
+    border-radius: 50%;
+    height: 225px;
+    margin-left: 40%;
+    margin-bottom: 50%;
+    border: 3px solid #5d8d92;
+}
+
+
+@media all and (min-width:300px){
+    .profileimg{
+        width: 37%;
+        border-radius: 50%;
+        height: 109px;
+        margin-left: 32%;
+        margin-bottom: 50%;
+        border: 3px solid #5d8d92;
+    }
+}
+@media all and (min-width:412px){
+    .profileimg{
+        width: 37%;
+        border-radius: 50%;
+        height: 143px;
+        margin-left: 32%;
+        margin-bottom: 50%;
+        border: 3px solid #5d8d92;
+    }
+}
+@media all and (min-width:500px){
+    .profileimg{
+        width: 37%;
+        border-radius: 50%;
+        height: 163px;
+        margin-left: 32%;
+        margin-bottom: 50%;
+        border: 3px solid #5d8d92;
+    }
+}
+
+@media all and (min-width:576px){
+    .profileimg{
+        width: 32%;
+        border-radius: 50%;
+        height: 168px;
+        margin-left: 35%;
+        margin-bottom: 50%;
+        border: 3px solid #5d8d92;
+    
+    }
+}
+@media all and (min-width:768px){
+    .profileimg{
+        width: 25%;
+        border-radius: 50%;
+        height: 168px;
+        margin-left: 37%;
+        margin-bottom: 50%;
+        border: 3px solid #5d8d92;
+    }
+}
+@media all and (min-width:992px){
+    .profileimg{
+        width: 24%;
+        border-radius: 50%;
+        height: 205px;
+        margin-left: 39%;
+        margin-bottom: 50%;
+        border: 3px solid #5d8d92;
+    }
+}
+@media all and (min-width:1200px){
+    .profileimg{
+        width: 21%;
+        border-radius: 50%;
+        height: 232px;
+        margin-left: 40%;
+        margin-bottom: 50%;
+        border: 3px solid #5d8d92;
+    }
+}
+@media all and (min-width:1400px){
+    .profileimg{
+        width: 18%;
+        border-radius: 50%;
+        height: 226px;
+        margin-left: 41%;
+        margin-bottom: 50%;
+        border: 3px solid #5d8d92;
+    }
+}
+
+.imgtext{
+    margin-bottom: 27%;
+    
+}
+.slide{
+    margin-bottom: 0;
+}
+.slidebtn{
+    margin-bottom: 36%;
+}
+
+
+/*----------------------------------------------9th part ----------------------*/
+
+.ninepart{
+    background-color: #F6F6F6;
+    padding: 6% 0%;
+}
+.ninepart h1{
+    color: #5d8d92;
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: 50px;
+}
+.ninepart p{
+    text-align: center;
+}
+
+.ninecontainer{
+    background: #ffffff;
+    box-shadow: 0px 0px 10px 1px;
+}
+.ninparttext h4{
+    margin-left: 2%;
+}
+.rightpart{
+    background: #333333;
+    padding-bottom: 8%;
+    border-radius: 20px;
+}
+.rightpart h3{
+    color: white;
+    text-align: left;
+    margin-bottom: 4%;
+    margin-left: 5%;
+}
+.rightpart p{
+    color: white;
+    text-align: left;
+    margin-left: 6%;
+    font-size: 17px;
+}
+
+.picon1{
+    color: white;
+    font-size: 27px;
+    margin-right: 4%;
+}
+.picon2{
+    font-size: 22px;
+    margin-right: 4%;
+    margin-bottom: 4%;
+}
+.picon3{
+    font-size: 20px;
+    background-color: #5d8d92;
+    padding: 3%;
+    border-radius: 30px;
+    margin-right: 4%;
+}
+
+.icontext{
+    background-color: #5C5C5C;
+    padding: 2%;
+    width: 90%;
+    border-radius: 10px;
+}
+.hrtag{
+    color: #5d8d92;
+    opacity: 100%;
+    width: 10%;
+    padding: 2px;
+    margin-left: 2%;
+}
+::placeholder{
+    padding-left: 3%;
+    color: #020302;
+}
+.input1{
+    width: 44%;
+    margin: 2%;
+    height: 50px;
+    border-radius: 3px;
+    border: 2px solid #5d8d92;
+}
+.input2{
+    width: 92%;
+    margin: 2%;
+    height: 50px;
+    border-radius: 3px;
+    border: 2px solid #5d8d92;
+}
+.input3{
+    width: 92%;
+    margin: 2%;
+    height: 350px;
+    border-radius: 3px;
+    border: 2px solid #5d8d92;
+}
+.input4{
+    color: white;
+    background-color: #5d8d92;
+    width: 92%;
+    margin: 2%;
+    height: 55px;
+    border-radius: 3px;
+    border: none;
+}
+select option{
+    margin-left: 2%;
+}
+
+/*----------------------------------------------10th part ----------------------*/
+.tenpart{
+    background-color: #181717;
+    padding-top: 4%;
+    padding-bottom: 1%;
+}
+.tenpart h5{
+    color: #5d8d92;
+    margin-left: 10%;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 10%;
+}
+.last ul li{
+    display: inline-block;
+    font-size: 30px;
+    margin: 0% 1%;
+
+}
+.last p{
+    color: white;
+}
+.tenpart ul{
+    list-style: none;
+    margin-bottom: -9px;
+}
+.tenpart ul li{
+    margin-bottom: 20px;
+}
+.tentext a{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 1%;
+}
+.tentext1{
+    color: #5d8d92;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 10%;
+}
+
+.tenpart p{
+    color: white;
+
+}
+.icon6{
+    color: #ffffff;
+}
+.hrtag1{
+    color: #5d8d92;
+    opacity: 100%;
+    width: 100%;
+    padding: 1px;
+
+}
+
+.input10{
+    width: 100%;
+    margin: 2%;
+    height: 50px;
+    border-radius: 3px;
+    border: 2px solid #5d8d92;
+}
+.input11{
+    color: white;
+    background-color: #5d8d92;
+    width: 50%;
+    margin: 2%;
+    height: 55px;
+    border-radius: 3px;
+    border: none;
+}
+
+
+
+
+
